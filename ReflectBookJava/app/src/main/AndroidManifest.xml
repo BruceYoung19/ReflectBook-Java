@@ -17,7 +17,9 @@
         </activity>
         <activity android:name=".register"> </activity>
         <activity android:name=".tutorial"> </activity>
+        <activity android:name=".Note"> </activity>
         <activity android:name=".profile"> </activity>
+        <activity android:name=".Test"> </activity>
     </application>
 
 </manifest>
