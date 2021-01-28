@@ -20,18 +20,19 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/TextView_subject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="197dp"
         android:layout_height="62dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.388"
-        tools:ignore="MissingConstraints" >
+        tools:ignore="MissingConstraints">
 
         <Spinner
             android:id="@+id/mood_spinner"
@@ -48,19 +49,24 @@
             android:layout_height="match_parent" />
     </RelativeLayout>
 
-    <EditText
-        android:id="@+id/Entry_text"
-        android:layout_width="228dp"
-        android:layout_height="239dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
+    <RelativeLayout
+        android:layout_width="333dp"
+        android:layout_height="253dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
+        app:layout_constraintVertical_bias="0.83"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/Entry_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/finish_b"
@@ -73,4 +79,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.951" />
+
+    <EditText
+        android:id="@+id/Subject_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
